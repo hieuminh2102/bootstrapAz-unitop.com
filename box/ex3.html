@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <style>
+        .price-box {
+            font-size: 15px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+        }
+
+        .product-item:hover {
+            border: 1px solid #bebebe !important;
+            transition: border 0.25s;
+        }
+    </style>
+    <div id="header" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-light text-center">Header</div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <div id="wp-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Shop</h1>
+                    <div class="list-product mt-3">
+                        <div class="row">
+                            <!-- border vao col-md-3 -->
+                            <div class="col-md-3  col-sm-4 col-6 mb-3 border">  
+                                <div class="product-item py-2">
+                                    <a href="" class="post-thumb"><img class="img-fluid" src="images/thumb-1.png"
+                                            alt=""></a>
+                                    <div class="product-info p-2 text-center">
+                                        <a href="" class="product-title">Lorem ipsum dolor sit amet.</a>
+                                        <div class="price-box">
+                                            <span class="current-price text-danger">500000d</span>
+                                            <span class="old-price">700000d</span>
+                                        </div>
+                                        <a href="" class="btn btn-outline-danger mt-3">dat hang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="row list-product list-inline mt-3">
+                        <li class="col-md-3 col-sm-4 col-6 mb-3">
+                            <!-- border vao product-item -->
+                            <div class="product-item py-2 border">
+                                <a href="" class="product-thumb">
+                                    <img class="img-fluid" src="images/thumb-1.png" alt="">
+                                </a>
+                                <div class="product-info text-center p-2">
+                                    <a href="" class="product-title">Lorem ipsum dolor sit amet.</a>
+                                    <div class="price-box">
+                                        <span class="curent-price text-danger">500.000đ</span>
+                                        <span class="old-price text-muted">600.000đ</span>
+                                    </div>
+                                    <a href="" class="btn btn-outline-danger mt-3">Đặt hàng</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-dark text-center">Footer</div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js" ></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

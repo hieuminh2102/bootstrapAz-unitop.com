@@ -1,0 +1,16 @@
+/* small devices(lanscape phone 576px and up) */
+@media (min-width: 576px){
+
+}
+/* medium devices(tablets 768px and up) */
+@media (min-width: 768px){
+    
+}/* small devices(destops 992px and up) */
+@media (min-width: 992px){
+    
+}/* small devices(large destops, 1200px and up) */
+@media (min-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+}
