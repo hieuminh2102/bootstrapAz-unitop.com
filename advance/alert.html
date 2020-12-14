@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Cảnh báo alert trong bootstrap</h1>
+                <h3>Cấu trúc alert</h3>
+                <div class="alert alert-success" role="alert">
+                    CẢnh báo đơn giản trong hệ thống
+                </div>
+                <h3>Alert background</h3>
+                <div class="alert alert-primary" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-light" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-info" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    cảnh báo đơn giản trong hệ thống
+                </div>
+                <h3>Alert link</h3>
+                <div class="alert alert-success" role="alert">
+                    Bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link">vào đây</a>
+                    để về trang chủ
+                </div>
+                <h3>Alert đa nội dung</h3>
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Thông báo!</h4>
+                    Bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để về trang chủ
+
+                    <p>Lorem ipsum dolor sit amet, consectetur <strong>Unitop.vn</strong> adipisicing elit. Architecto,
+                        cum ullam facilis maiores
+                        eligendi atque officiis suscipit, nisi tenetur quibusdam veniam id quidem blanditiis molestias
+                        beatae aspernatur, nostrum ab officia.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo rerum nesciunt esse iusto enim
+                        saepe pariatur, quas, id adipisci vel quaerat veniam molestias magnam nam tenetur mollitia ipsa
+                        voluptate soluta!</p>
+                </div>
+                <h3>Ẩn hộp thoại Alert</h3>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    My alert
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="my-alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <h4 class="alert-heading">Thông báo!</h4>
+                    Bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để về trang chủ
+
+                    <p>Lorem ipsum dolor sit amet, consectetur <strong>Unitop.vn</strong> adipisicing elit. Architecto,
+                        cum ullam facilis maiores
+                        eligendi atque officiis suscipit, nisi tenetur quibusdam veniam id quidem blanditiis molestias
+                        beatae aspernatur, nostrum ab officia.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo rerum nesciunt esse iusto enim
+                        saepe pariatur, quas, id adipisci vel quaerat veniam molestias magnam nam tenetur mollitia ipsa
+                        voluptate soluta!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js" ></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#my-alert").on('closed.bs.alert', function(){
+                alert("Đã ẩn alert");
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

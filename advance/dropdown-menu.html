@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Dropdown-menu bootstrap</title>
+</head>
+
+<body>
+    <style>
+        #my-dropdown .dropdown-menu {
+            width: 300px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Dropdown-menu bootstrap</h1>
+                <div class="dropdown float-right" id="my-dropdown">
+                    <button class="btn btn-outline-danger dropdown-toggle" data-display="static" data-toggle="dropdown">Option</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="" class="dropdown-item">Menu item 1</a>
+                        <a href="" class="dropdown-item">Menu item 2</a>
+                        <a href="" class="dropdown-item">Menu item 3</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">More and More</div>
+                        <a href="" class="dropdown-item">Menu item 4</a>
+                        <a href="" class="dropdown-item">Menu item 5</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quam fugit natus dolorem
+                            nihil, molestiae illo aspernatur consequuntur amet ipsa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js" ></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#my-dropdown").on("show.bs.dropdown", function () {
+                alert('show');
+            });
+            $("#my-dropdown").on("hide.bs.dropdown", function () {
+                alert("hide");
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

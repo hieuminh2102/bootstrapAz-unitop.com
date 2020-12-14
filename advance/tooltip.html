@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Tooltip trong bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Tooltip trong bootstrap</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad ipsum ex voluptates illum
+                    repellendus autem vitae alias reprehenderit eveniet.</p>
+                <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title=" tooltip for a">sit amet</a> consectetur
+                    adipisicing elit. Voluptate, voluptatum.</p>
+                <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="tooltip for a">sit amet</a> consectetur
+                    adipisicing elit. Voluptate, voluptatum.</p>
+                <p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="tooltip for a">sit amet</a> consectetur
+                    adipisicing elit. Voluptate, voluptatum.</p>
+                <p>Lorem ipsum dolor <a href="" data-placement="right" data-toggle="tooltip" title="<strong>html in đậm</strong> tooltip for a">sit
+                        amet</a> consectetur adipisicing elit. Voluptate, voluptatum.</p>
+                <form action="">
+                    username <input type="text" data-toggle="tooltip" title="Tên đăng nhập có 6 ký tự, viết liền không dấu" name="" id="">
+                </form>   
+                <button class="btn btn-danger mt-3" data-toggle="tooltip" title="bạn cần đặt hàng để nhận ưu đãi">Đăng ký</button>         
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js" ></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'right',
+                trigger: 'hover focus',
+                html: true
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
